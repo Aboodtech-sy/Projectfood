@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Taste Menu - Stellar Night</title>
+</head>
+
+<body>
+    <div class="main-container full-width-container">
+        <header class="modern-header">
+            <div class="logo">
+                <h1>Stellar Night</h1>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="AboutUs.html">AboutUs</a></li>
+                    <li><a href="Meals.html">Meals</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="section-title">
+                <h2>Meals</h2>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Meal</th>
+                            <th>Price (SYP)</th>
+                            <th>Details</th>
+                            <th>Select</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LS101</td>
+                            <td>The Embroidered King's Feast</td>
+                            <td>42000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail1"></td>
+                            <td><input type="radio" name="mealSelect[]" value="The Embroidered King's Feast - 42000"
+                                    data-price="42000"></td>
+                        </tr>
+                        <tr id="detail1" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li>
+                                            <h3>Ingredients:</h3> Aged premium rice, local lamb shank, roasted nuts,
+                                            secret "Stellar" spices
+                                        </li>
+                                        <li>
+                                            <h3>Category:</h3> Main Dishes - Royal
+                                        </li>
+                                        <li>
+                                            <h3>Description:</h3> A dish combining heritage and luxury, tender meat that
+                                            melts in the mouth with rich Damascene spice flavors.
+                                        </li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/1.png" alt="King's Feast">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>LS102</td>
+                            <td>Ocean Atlas with Saffron</td>
+                            <td>62000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail2"></td>
+                            <td><input type="radio" name="mealSelect[]" value="Ocean Atlas with Saffron - 62000"
+                                    data-price="62000"></td>
+                        </tr>
+                        <tr id="detail2" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li>
+                                            <h3>Ingredients:</h3> Fresh seafood (Shrimp, Salmon), Spanish saffron sauce,
+                                            black ink pasta
+                                        </li>
+                                        <li>
+                                            <h3>Category:</h3> International Seafood
+                                        </li>
+                                        <li>
+                                            <h3>Description:</h3> A complete marine painting offering deep ocean flavors
+                                            with a refreshing saffron aroma.
+                                        </li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/2.png" alt="Ocean Atlas">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS201</td>
+                            <td>Grilled Wilderness Magic</td>
+                            <td>55000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail3"></td>
+                            <td><input type="radio" name="mealSelect[]" value="Grilled Wilderness Magic - 55000"
+                                    data-price="55000"></td>
+                        </tr>
+                        <tr id="detail3" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li>
+                                            <h3>Ingredients:</h3> Veal ribs, rosemary sauce, grilled wild vegetables,
+                                            garlic-infused mashed potatoes
+                                        </li>
+                                        <li>
+                                            <h3>Category:</h3> French Grills
+                                        </li>
+                                        <li>
+                                            <h3>Description:</h3> Slowly grilled meat over charcoal, drenched in
+                                            aromatic wild herb sauce.
+                                        </li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/3.png" alt="Wilderness Magic">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS202</td>
+                            <td>Italian Forest Whisper</td>
+                            <td>34000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail4"></td>
+                            <td><input type="radio" name="mealSelect[]" value="Italian Forest Whisper - 34000"
+                                    data-price="34000"></td>
+                        </tr>
+                        <tr id="detail4" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li>
+                                            <h3>Ingredients:</h3> Variety of wild mushrooms, fresh cream, aged Parmesan
+                                            cheese, handmade pasta
+                                        </li>
+                                        <li>
+                                            <h3>Category:</h3> Vegetarian Dishes - Italian
+                                        </li>
+                                        <li>
+                                            <h3>Description:</h3> A warm, creamy experience that takes you on a journey
+                                            to the forests of Tuscany.
+                                        </li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/4.png" alt="Forest Whisper">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS301</td>
+                            <td>Berry Moon's Kiss</td>
+                            <td>24000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail5"></td>
+                            <td><input type="radio" name="mealSelect[]" value="Berry Moon's Kiss - 24000"
+                                    data-price="24000"></td>
+                        </tr>
+                        <tr id="detail5" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li>
+                                            <h3>Ingredients:</h3> Philadelphia cheese, fresh wild berries, New Zealand
+                                            butter biscuit base
+                                        </li>
+                                        <li>
+                                            <h3>Category:</h3> Cold Desserts
+                                        </li>
+                                        <li>
+                                            <h3>Description:</h3> A cool and refreshing harmony, combining the acidity
+                                            of berries with the sweetness of cream.
+                                        </li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/5.png" alt="Moon's Kiss">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LS302</td>
+                            <td>Shimmering Eastern Gold</td>
+                            <td>28000</td>
+                            <td><input type="checkbox" class="detail-check" data-target="detail6"></td>
+                            <td><input type="radio" name="mealSelect[]" value="Shimmering Eastern Gold - 28000"
+                                    data-price="28000"></td>
+                        </tr>
+                        <tr id="detail6" class="hidden">
+                            <td colspan="5">
+                                <div class="details-container">
+                                    <ul class="details-list">
+                                        <li>
+                                            <h3>Ingredients:</h3> Kunafa dough, fresh local cream, edible gold leaf,
+                                            pistachios
+                                        </li>
+                                        <li>
+                                            <h3>Category:</h3> Luxury Oriental Sweets
+                                        </li>
+                                        <li>
+                                            <h3>Description:</h3> Traditional Kunafa with a royal touch, served hot with
+                                            rose-scented syrup.
+                                        </li>
+                                    </ul>
+                                    <div class="details-images">
+                                        <img class="meal-image" src="photos/6.png" alt="Eastern Gold">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="continue-area">
+                <button id="continueButton" class="button">Continue to Order</button>
+            </div>
+
+            <div id="formContainer" class="hidden">
+                <div class="section-title">
+                    <h2>Table Reservation & Order Details</h2>
+                </div>
+                <form id="orderForm">
+                    <div class="form-row">
+                        <label for="fullName">Full Name (Format: Name Surname):</label>
+                        <input type="text" id="fullName" name="fullName" pattern="^[A-Za-z]+ [A-Za-z]+$">
+                    </div>
+                    <div class="form-row">
+                        <label for="orderDate">Preferred Visit Date:</label>
+                        <input type="date" id="orderDate" name="orderDate">
+                    </div>
+                    <div class="form-row">
+                        <label for="mobile">Syrian Contact Number (e.g., 0944123456):</label>
+                        <input type="tel" id="mobile" name="mobile" pattern="^(09[3-6|8-9]\d{7})$">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Contact Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="bankAccount">Membership Code (6 digits starting with 0):</label>
+                        <input type="text" id="bankAccount" name="bankAccount" required pattern="^0\d{5}$">
+                    </div>
+                    <div class="action-area">
+                        <button type="submit" class="button">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="js.myFunctions.js"></script>
+</body>
+
+</html>
